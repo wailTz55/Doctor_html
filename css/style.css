@@ -1,0 +1,228 @@
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --color-one:#25a4b7;
+    --color-two:#e8f6f7;
+    --color-three:#cdeaee;
+    --color-four:#00172f;
+    --color-five:#a1b9b9;
+    --color-six:#d9ebeb;
+    --color-seven:#3f4a3c;
+    --color-eighte:#95a5a4;
+    --color-white:white;
+
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden !important;
+    font-family: "Work Sans", serif;
+}
+
+a {
+    text-decoration: none
+}
+
+ul {
+    list-style-type: none
+}
+
+input:focus {
+    outline: none
+}
+
+p {
+    margin: 0;
+}
+/*? START Framework  */
+.c-one{
+    color: var(--color-one) !important;
+}
+.c-two{
+    color: #8da3a3 !important;
+}
+/*? END Framework  */
+/**--------------------------- section one */
+/** 1 section  */
+.section-one{
+    width: 100%;
+    height: 750px;
+    background-color: rgb(232, 246, 247);
+
+}
+
+/** 2 box  */
+.box{
+    position: relative;
+    height: 100%;
+}
+.box .part-one{
+    position: absolute;
+    left: 0;
+    width: 50%;
+    height: 88.7%;
+}
+.box .part-two{
+    position: absolute;
+    right: 0;
+    width: 50%;
+    height: 88.7%;
+}
+.box .part-two .continer{
+    position: absolute;
+    /* right: 100px; */
+    background-color: var(--color-one);
+    width: 50%;
+    height: 100%;
+}
+.box .part-two .continer img{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+}
+/* part-one */
+.part-one{
+    padding-left: 200px;
+}
+.part-one h1{
+    font-size: 3rem!important;
+}
+.part-one > p{
+    margin-top: 10px;
+
+} 
+
+.ABOUTUS-btn {
+    left: 0;
+    cursor: pointer;
+    width: 175px;
+    height: 40px;
+    border-radius: 6px;
+    padding:5px;
+    margin-top: 35px;
+    background-color: var(--color-four);
+    color:var(--color-white);
+}
+.ABOUTUS-btn p{
+    margin-top: 3px;
+}
+.ABOUTUS-btn:hover{
+    border: solid 2px var(--color-four);
+    background-color: transparent;
+    color:var(--color-four);
+
+}
+/** 3 navbar  */
+.navbar {
+    border-bottom: solid 2px var(--color-black);
+    color: var(--color-black);
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.1); /* ظل خفيف في الجهة السفلية */
+
+}
+
+.nav-link {
+    font-size: 24px !important;
+}
+
+.linkColor:hover {
+    color: var(--color-navbar) !important;
+}
+
+@media screen and (max-width:1000px) {
+    .navbarMobile {
+        display: block !important;
+    }
+
+    .navbarDeskTop {
+        display: none !important;
+    }
+
+    .navbar-togglerBar {
+        display: none !important;
+    }
+}
+
+@media screen and (min-width:999px) {
+    .navbarDeskTop {
+        display: block !important;
+    }
+
+    .navbarMobile {
+        display: none !important;
+    }
+
+    .navbar-togglerBar {
+        display: block !important;
+    }
+}
+
+/* 2.1 navbar desktop */
+.navbarDeskTop div a img,
+.navbarMobile div a img {
+    height: 50px;
+    max-width: 100%;
+    transform: scale(1.2);
+}
+.appointment-btn{
+    cursor: pointer;
+    background-color: var(--color-four);
+    width: 175px;
+    height: 40px;
+    border-radius: 6px;
+    margin-top: 7px;
+    margin-left: 44px;
+    padding:5px;
+    color:white;
+}
+.appointment-btn:hover{
+    border: solid 2px var(--color-four);
+    background-color: transparent;
+    color:var(--color-four);
+
+}
+.appointment-btn p{
+    padding-top: 3px;
+}
+/*? Note: dropdown-menu and dropdown-item For the data bar */
+.dropdown-menu {
+    padding: 0;
+    border-radius: 5%;
+}
+
+.dropdown-item {
+    padding: 10px !important;
+}
+
+.dropdown-item:hover {
+    background-color: var(--color-black);
+    color: var(--color-body);
+}
+
+@media screen and (min-width:720px) and (max-width:1000px) {
+    .justify-content-center {
+        justify-content: center !important;
+        flex-direction: row;
+    }
+}
+
+/* 2.2 navbar mobile */
+button.navbar-toggler {
+    border: none !important;
+    padding: 0 !important;
+    color: var(--color-body) !important;
+}
+
+button.navbar-toggler:focus,
+btn-close:focus {
+    box-shadow: none;
+}
