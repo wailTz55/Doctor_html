@@ -14,12 +14,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
 </head>
 
 <body>
     <!--! START CODE -->
-    <!--1.1 Start navbar -->
-    <section  class="section-one">
+    <!-- 1 section one -->
+    <section class="section-one">
 
         <!--1.1.a navbarMobile -->
         <nav class="navbar navbarMobile bg-body-tertiary fixed-top">
@@ -44,17 +46,18 @@
                     <div class="offcanvas-body">
                         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                             <li class="nav-item">
-                                <a class=" nav-link linkColor linkActive active" aria-current="page"
+                                <a class=" nav-link fw-semibold  linkColor linkActive active" aria-current="page"
                                     href="/index.html">Home</a>
                             </li>
-                            <li class="nav-item fw-semibold mx-4 active">
+                            <li class="nav-item fw-semibold  active">
                                 <a class="nav-link linkColor active" aria-current="page"
                                     href="/Categories.html">Categories</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link linkColor active" aria-current="page" href="/store.html">store</a>
+                                <a class="nav-link fw-semibold  linkColor active" aria-current="page"
+                                    href="/store.html">store</a>
                             </li>
-                            <li class="nav-item fw-semibold mx-4 active">
+                            <li class="nav-item fw-semibold  active">
                                 <a class="nav-link linkColor active" aria-current="page"
                                     href="/BestSeller.html">BestSeller</a>
                             </li>
@@ -75,8 +78,7 @@
                         <!-- <p class="m-0 fs-2 fw-semibold">Book <span style="color: #af481f;font-weight: 700;">Shops</span></p> -->
                         <ul class="navbar-nav justify-content-center flex-grow-1 pe-md-0 pe-5 ">
                             <li class="nav-item fw-semibold mx-4 active">
-                                <a class="nav-link c-one" aria-current="page"
-                                    href="/index.html">Home</a>
+                                <a class="nav-link c-one" aria-current="page" href="/index.html">Home</a>
                             </li>
                             <li class="nav-item fw-semibold mx-4 active">
                                 <a class="nav-link linkColor active" aria-current="page"
@@ -101,10 +103,11 @@
 
         </nav>
 
-        <div class=" box container">
+        <div class=" box container-fluid container-lg">
             <div class="part-one d-flex justify-content-center flex-column">
-                <h1 >Let's Make An <br> <span class="c-one">Appointment</span> <br> With <strong>Dr. Wail</strong></h1>
-                <p class="c-two">Drop you requirement we will define it and build the best for you You can monitor and manage your business with the paltform we will provide.</p>
+                <h1>Let's Make An <br> <span class="c-one">Appointment</span> <br> With <strong>Dr. Wail</strong></h1>
+                <p class="c-two">Drop you requirement we will define it and build the best for you You can monitor and
+                    manage your business with the paltform we will provide.</p>
                 <div class="ABOUTUS-btn text-center">
                     <p class="fw-semibold">ABOUT US</p>
                 </div>
@@ -118,10 +121,124 @@
         </div>
         <!-- End navbar -->
     </section>
+    <!-- 2 section two -->
+    <section class="section-two container-fluid container-lg">
+        <div class="father-h2-ection-two d-flex justify-content-center">
+            <h2 class="fw-semibold">Are You Looking For</h2>
+            <div class="line"></div>
+        </div>
+        <div class="countiner d-flex flex-wrap justify-content-center">
+            <div class="box my-4">
+                <div class="part-one d-flex  align-items-center">
+                    <div class="surcle me-3 d-flex justify-content-center align-items-center">
+                        <i class="fa-solid fa-stethoscope  fs-3"></i>
+                    </div>
+                    <h4>Health Guarantee</h4>
+                </div>
+                <p class="mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="box my-4">
+                <div class="part-one d-flex  align-items-center">
+                    <div class="surcle me-3 d-flex justify-content-center align-items-center">
+                        <i class="fa-solid fa-hospital  fs-3"></i>
+                    </div>
+                    <h4>Trusted Clinic</h4>
+                </div>
+                <p class="mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="box my-4">
+                <div class="part-one  d-flex  align-items-center">
+                    <div class="surcle me-3 d-flex justify-content-center align-items-center">
+                        <i class="fa-solid fa-user-doctor  fs-3"></i>
+                    </div>
+                    <h4>Expert Therapist</h4>
+                </div>
+                <p class="mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
+    </section>
+    <!-- 3 section three -->
+    <section class="section-three d-flex flex-column">
+        <div class="part-one d-flex">
+            <div class="box-left d-flex">
+                <div class="part-left">
+                    <div class="photos y-center"></div>
+                </div>
+                <div class="part-right">
+                    <div class="photos"></div>
+                    <div class="photos"></div>
+                </div>
+            </div>
+            <div class="box-right d-flex align-items-start mt-4 flex-column">
+                <h2 class="mb-3 fw-bold">Empower Your Life With Chiropractic <span>Care</span></h2>
+                <p class="mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima amet, error accusantium
+                    dolores
+                    numquam harum ratione ut aliquid. Nesciunt blanditiis repudiandae voluptatum placeat, ab cupiditate
+                    illo quis harum nemo molestias!</p>
+                <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet
+                    consectetur
+                    adipisicing elit.</p>
+                <div>
+                    <p class="fs-4">Dr. Ziad Wail</p>
+                </div>
+            </div>
+        </div>
+        <div class="part-two">
+        </div>
+    </section>
+    <!-- 4 section three -->
+    <section class="section-four container-fluid container-lg">
+        <div class="part-one">
+            <h2>My Services</h2>
+        </div>
+        <div class="part-two d-flex flex-wrap justify-content-center">
+            <div class="box ">
+                <h3>deriro</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, aliquid libero alias quae
+                    sapiente aut inventore minima. Dicta, facilis.</p>
+            </div>
+            <div class="box">
+                <h3>deriro</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, aliquid libero alias quae
+                    sapiente aut inventore minima. Dicta, facilis.</p>
+            </div>
+            <div class="box">
+                <h3>deriro</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, aliquid libero alias quae
+                    sapiente aut inventore minima. Dicta, facilis.</p>
+            </div>
+            <div class="box">
+                <h3>deriro</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, aliquid libero alias quae
+                    sapiente aut inventore minima. Dicta, facilis.</p>
+            </div>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer>
+        <div class="father container-fluid container-lg">
+            <h2>Contact US</h2>
+            <div class="countiner d-flex flex-row">
+                <div class="info">
+                    <p><span class="fw-semibold">Email: </span>Ziad@gmail.com</p>
+                    <p><span class="fw-semibold">Maps: </span></p>
+                    <p><span class="fw-semibold">Phone: </span>+213253625968</p>
+                </div>
+                <form class="d-flex flex-column" action="" method="get">
+                    <input type="text" name="" id="">
+                    <input type="email" name="" id="">
+                    <textarea name="" id=""></textarea>
+                    <button type="submit">send</button>
+                </form>
+            </div>
+            <div class="line"></div>
+        </div>
+    </footer>
     <!--! END CODE -->
     <!-- start js -->
     <script src="/js/bootstrap.bundle.min.js"></script>
     <script src="/js/all.min.js"></script>
+    <script src="/js/main.js"></script>
     <!-- End js -->
 </body>
 
